@@ -364,7 +364,7 @@ def install(args):
     # Custom Domain (agn)
     custom_domain = args.agn or os.environ.get("agn") or DOMAIN
     if not custom_domain:
-        domain_prompt = "请输入自定义域名 (例如: test.zmkk.fun"
+        domain_prompt = "shouyoukeji.pp.ua"
         if argo_token:
             domain_prompt += ", 必须是与Argo Token关联的域名"
         else:
@@ -803,7 +803,7 @@ def get_tunnel_domain():
     return None
 
 # 上传订阅到API服务器
-UPLOAD_API = "https://file.zmkk.fun/api/upload"  # 文件上传API
+UPLOAD_API = "https://file.shouyoukeji.pp.ua/api/upload"  # 文件上传API
 
 def upload_to_api(subscription_content, user_name):
     """
